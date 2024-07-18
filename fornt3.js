@@ -1,10 +1,9 @@
 let front3 = (str) => {
-    if(str.substring(0,3)){
-        return str.substring(0,3) + str.substring(0,3) + str.substring(0,3);
-    }
-    else{
-        return str;
-    }
+  if (str.length <= 3) {
+    return str + str + str;
+  } else {
+    return str.slice(0, 3) + str.slice(0, 3) + str.slice(0, 3);
+  }
 }
 
 console.log(front3('Java'));
